@@ -1,0 +1,22 @@
+﻿extends layout
+block content
+    nav.navbar.navbar-light.navbar-default.bg-light.navbar-expand-lg.navbar-light.bg-light.navbar-fixed-top
+        div.navbar-header.container
+            button.align-right.navbar-toggle.collapsed(type="button" data-target="#navbarNav" data-toggle="dropdown"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation") 
+                span.icon-bar(deluminate_imagetype="unknown")
+                span.icon-bar(deluminate_imagetype="unknown")
+                span.icon-bar(deluminate_imagetype="unknown")
+            div.rowcollapse.navbar-collapse.center-block#navbarNav  
+                div.col-xs-6.col-md-offset-5
+                    ul.nav.navbar-center.highlight.nav-pills.text-center
+                        each item in["Articles" , "Categories" , "Produits"]
+                            li.nav-item: a(href="/"+item.toLowerCase())= item  
+    p 
+    div.col-md-3 
+        ul.nav.navbar.highlight.nav-stacked.navbar-default
+           - var list = ["Articles" , "Categories" , "Produits"]
+                each item in list
+                    li.nav-item: a(href="/"+item.toLowerCase())= item  
+    
+    div.col-md-8 Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte
+    
