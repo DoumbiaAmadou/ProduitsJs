@@ -1,1 +1,25 @@
-﻿MENU HEre
+﻿extends layout
+block menu
+    nav.navbar.navbar-light.navbar-default.bg-light.navbar-expand-lg.navbar-light.bg-light.navbar-fixed-top(style="background-color: #e3f2fd;")
+        button.align-right.navbar-toggle.x.collapsed#dropdownMenu1(type="button" data-target="#navbarNav" data-toggle="collapse") 
+            span.icon-bar(deluminate_imagetype="unknown")
+            span.icon-bar(deluminate_imagetype="unknown")
+            span.icon-bar(deluminate_imagetype="unknown")
+        div.row.justify-content-md-center
+            div.col-md-auto.collapse.navbar-collapse#navbarNav
+                ul.nav.navbar-nav.list-inline
+                    each item in["Articles" , "Categories" , "Produits"]
+                        li.nav-item: a(href="/"+item.toLowerCase())= item 
+
+                ul.nav.navbar-nav.list-inline.justify-content-end(style="padding: 10px;")
+                    li.nav-item.nav-link
+                        input.form-control(type="text" name="login" placeholder="login ")
+                    li.nav-item.nav-link
+                        input.form-control(type="text" name="login" placeholder="Pass ") 
+                    li 
+                    li.nav-item.nav-link
+                        button.btn.btn-outline-success.my-2.my-sm-0 sign up 
+                    li.nav-item.nav-link
+                        button.btn.btn-outline-success.my-2.my-sm-0 sign in 
+
+            div.col.col-lg-2

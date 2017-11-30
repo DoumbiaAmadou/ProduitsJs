@@ -51,7 +51,10 @@ a {
     background-color: #55acee;
 }
 
-    .btn-tw:hover {
+.btn-tw:hover {
         color: #fff;
         background-color: #59b5fa;
-    }
+}
+.navbar-nav li* a {
+    line-height: 50px;
+}
