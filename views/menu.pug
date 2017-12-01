@@ -10,7 +10,7 @@ block menu
                 ul.nav.navbar-nav.list-inline
                     each item in["Home" , "Articles" , "Categories" , "Produits"]
                         li.nav-item: a(href="/"+item.toLowerCase())= item 
-
+                 
                 ul.nav.navbar-nav.list-inline.justify-content-end(style="padding: 10px;")
                     li.nav-item.nav-link
                         input.form-control(type="text" name="login" placeholder="login ")
