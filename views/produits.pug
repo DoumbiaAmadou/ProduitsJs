@@ -1,7 +1,12 @@
 ﻿extends menu
 block content
-    br
-
-
-    h1  home Page Articles
+    h1 liste de Produits dispo.
+    
+    ul.list-group.list-group-flush
+        each item, i in produits
+            li.list-group-item.d-flex.justify-content-between.align-items-center(href="#")
+                 a(href="#")=item.titre
+                        span.badge.pull-right( href="#")
+                            =item.qte 
+                           
 

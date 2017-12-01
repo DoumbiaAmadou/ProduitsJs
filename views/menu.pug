@@ -8,7 +8,7 @@ block menu
         div.row.justify-content-md-center
             div.col-md-auto.collapse.navbar-collapse#navbarNav
                 ul.nav.navbar-nav.list-inline
-                    each item in["Articles" , "Categories" , "Produits"]
+                    each item in["Home" , "Articles" , "Categories" , "Produits"]
                         li.nav-item: a(href="/"+item.toLowerCase())= item 
 
                 ul.nav.navbar-nav.list-inline.justify-content-end(style="padding: 10px;")
